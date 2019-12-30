@@ -5,16 +5,7 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
-#from os import path
-#if os.path.exists("env.py"):
-    #app.config["MONGO_URI"] = env.mongo_uri
-#else:
-    #app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
-#app = Flask(__name__)
-#app.config["MONGO_DBNAME"] = 'task_manager'
-#app.config["MONGO_URI"] = 'mongodb+srv://root:Misty3090@myfirstcluster-vcoqj.mongodb.net/task_manager?retryWrites=true&w=majority'
-#app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 if os.path.exists("env.py"):
     import env
 app = Flask(__name__)
